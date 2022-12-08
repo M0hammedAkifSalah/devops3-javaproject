@@ -1,17 +1,15 @@
-pipeline{
+pipeline {
     
-    agent any 
+    agent any
     
-    stages {
-        
+    stages{
         stage('Git Checkout'){
             
             steps{
-                
-                script{
-                    
-                    git branch: 'main', url: 'https://github.com/M0hammedAkifSalah/devops3-javaproject.git'
-             }
+                git branch: 'main', url: 'https://github.com/M0hammedAkifSalah/devops3-javaproject.git'
+            
+            }
+        
         }
     }
 }
